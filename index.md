@@ -9,10 +9,13 @@ Webmail kan findes på [zoho.com](http://www.zoho.com/mail/login.html)
 #### IMAP:
 
 Indkommende server: 
+
 - imappro.zoho.com, 
 - Port: 993, 
 - SSL
+
 Udgående server: 
+
 - smtp.zoho.com, 
 - Port: 465, 
 - SSL
