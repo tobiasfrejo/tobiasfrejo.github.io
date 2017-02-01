@@ -1,48 +1,13 @@
-## Mail
+#Lorem Ipsum
 
-### Webmail
+## Dolor sit amet
 
-Webmail kan findes på [zoho.com](http://www.zoho.com/mail/login.html)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet fringilla dui, tincidunt semper lectus. Nam pretium mollis eros, in dignissim est scelerisque ut. Etiam a condimentum magna, quis vestibulum arcu. Suspendisse bibendum ligula nec metus luctus fringilla. Mauris tristique risus quis mauris mattis, et feugiat lectus iaculis. Suspendisse facilisis mollis congue. Proin pulvinar ipsum nulla, a ultrices neque dignissim ac. Fusce lacus metus, efficitur at laoreet in, consequat et tortor. Nam id eleifend sapien. Curabitur a ipsum et lorem auctor lobortis ac vitae purus. Donec ultrices tincidunt ultrices. Aliquam luctus malesuada lacus et tincidunt. Aliquam metus nibh, sodales nec quam ut, pulvinar efficitur arcu. Etiam sapien ligula, tempor et sodales ac, ullamcorper non magna. Aliquam vel commodo sapien.
 
-### Opsætning af mailklienter
+Aenean maximus pellentesque scelerisque. Donec fringilla tortor mauris, a imperdiet diam laoreet vel. Quisque porta odio vel congue efficitur. Curabitur ullamcorper erat imperdiet porta pulvinar. Aliquam ut nunc ut orci laoreet vestibulum a condimentum orci. Etiam suscipit erat leo, eget dignissim est iaculis a. Sed sollicitudin tincidunt orci. Praesent lacinia odio dolor, pharetra egestas ante convallis a. Aliquam ornare euismod suscipit. Donec ut nisi dapibus, consectetur justo in, congue diam.
 
-#### IMAP (anbefalet)
+Donec lobortis neque at erat volutpat consectetur. Donec nec tellus justo. Ut mollis ullamcorper velit egestas tempus. Nullam congue hendrerit purus in molestie. Ut maximus purus arcu, nec convallis nunc fermentum ac. Nam sodales risus vel venenatis varius. Morbi pharetra erat ligula, sed vulputate nisl dignissim et. Sed vitae sapien dictum, laoreet erat vel, elementum ipsum. Nullam eu porttitor tortor. Aenean viverra tristique quam, posuere iaculis augue lacinia eget.
 
-##### Aktiver IMAP ved Zoho
+Phasellus lacinia augue at metus rutrum elementum. Ut eget porttitor ante. Donec maximus libero est, non cursus massa convallis in. Vivamus interdum id elit sit amet placerat. In hac habitasse platea dictumst. Curabitur ut ligula auctor, hendrerit velit in, egestas velit. Donec et lacinia ligula. Maecenas rutrum, tellus sit amet consectetur sagittis, erat nisi auctor dolor, ut scelerisque nibh diam eu sem. Sed id ante pharetra sem vehicula porttitor et vitae neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 
-1. Log ind på webmail
-
-2. Gå til settings
-![Gå til settings](./img/zoho_settings.png)
-
-3. Vælg Email forwarding and POP/IMAP
-![Email forwarding and POP/IMAP](./img/zoho_mailforwarding.png)
-
-4. Ud for status under IMAP, tryk aktiver.
-![Aktiver IMAP](./img/zoho_imapactivate.png)
-
-5. Tilføj ny konto i det ønskede mailprogram. 
-
-6. Ofte vil der være valgmuligheder som Office 365, Gmail, Exchange og anden. Vælg anden.
-
-7. Sandsynligvis skal serveroplysningerne tastes ind manuelt. Vælg derfor manuel konfiguration (eller lignende).
-
-8. Brug nedenstående oplysninger, når bedt om det.
-
-9. Hvis der ikke er noget sted til indtastning af port og/eller sikkerhed, gemmer det sig måske blandt nogle advancerede indstillinger. Eller også har programmet ikke behov for at få det indtastet. 
-
-Indkommende server: 
-
-- imappro.zoho.com, 
-- Port: 993, 
-- Sikkerhed: SSL
-
-Udgående server: 
-
-- smtp.zoho.com, 
-- Port: 465, 
-- Sikkerhed: SSL
-
-
-## Andre links
-
+Morbi finibus, diam in ultrices auctor, dolor justo laoreet est, ac eleifend orci dolor ac lorem. Ut lobortis ut lacus eget tempus. Nulla eget malesuada metus. Mauris semper ultrices porta. Curabitur a malesuada sapien. Cras gravida urna vel nisi euismod, eu hendrerit tellus posuere. Nulla non metus convallis nibh maximus porttitor. Maecenas laoreet scelerisque enim, a maximus ante rhoncus et.
