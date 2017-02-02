@@ -8,7 +8,7 @@
 }
 [class*="col-"] {
     float: left;
-    padding: 15px;
+    padding: 5px;
 }
 html {
     font-family: "Lucida Sans", sans-serif;
@@ -48,6 +48,23 @@ html {
     font-size: 12px;
     padding: 15px;
 }
+
+.box {
+    background-color: #0099cc;
+    width: 100%;
+    max-height: 200px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.inner-box {
+    height: 500px;
+}
+
+.box.active {
+    overflow: visible;
+}
+
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
