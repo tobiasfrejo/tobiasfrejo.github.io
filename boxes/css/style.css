@@ -10,6 +10,13 @@
     float: left;
     padding: 5px;
 }
+.clearfix {
+    clear: both;
+    overflow: auto;
+}
+.right {float: right}
+.left {float: left}
+
 html {
     font-family: "Lucida Sans", sans-serif;
 }
@@ -18,29 +25,7 @@ html {
     color: #ffffff;
     padding: 15px;
 }
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.menu li {
-    padding: 8px;
-    margin-bottom: 7px;
-    background-color: #33b5e5;
-    color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-.menu li:hover {
-    background-color: #0099cc;
-}
-.aside {
-    background-color: #33b5e5;
-    padding: 15px;
-    color: #ffffff;
-    text-align: center;
-    font-size: 14px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
+
 .footer {
     background-color: #0099cc;
     color: #ffffff;
@@ -52,17 +37,27 @@ html {
 .box {
     background-color: #0099cc;
     width: 100%;
-    max-height: 200px;
+    height: 200px;
     padding: 15px;
     overflow: hidden;
 }
 
-.inner-box {
-    height: 500px;
+.inner-box.visible {
+    height: 100%
 }
 
-.box.active {
-    overflow: visible;
+.inner-box.hidden {display: none}
+
+.active .inner-box {
+    display: block;
+    min-height: 200px;
+}
+
+.active, .active .box {
+    overflow: auto;
+    width: 100% !important;
+    min-height: 200px;
+    height: 100%;
 }
 
 /* For phones (portrait) */
