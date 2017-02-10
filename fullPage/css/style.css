@@ -13,8 +13,35 @@
 
 /*  Fix section navigation over slide arrow
 	* --------------------------------------- */
-    #fp-nav {right: 50px !important}
+    #fp-nav.right {right: 50px !important}
 
+/*  Custom navigation arrows
+	* --------------------------------------- */
+	.arrow {
+		content: url(https://upload.wikimedia.org/wikipedia/commons/8/85/Arrow_top_svg.svg);
+		width: 50px;
+	}
+	.arrow.up    {transform: rotate(0deg)}
+	.arrow.right {transform: rotate(90deg)}
+	.arrow.down  {transform: rotate(180deg)}
+	.arrow.left  {transform: rotate(270deg)}
+
+	.fp-controlArrow.fp-next {
+    	content: url(https://upload.wikimedia.org/wikipedia/commons/8/85/Arrow_top_svg.svg);
+    	width: 50px !important;
+    	height: 50px !important;
+    	transform: rotate(90deg);
+    	border: none;
+    	margin-top: -25px;
+	}
+	.fp-controlArrow.fp-prev {
+    	content: url(https://upload.wikimedia.org/wikipedia/commons/8/85/Arrow_top_svg.svg);
+    	width: 50px !important;
+    	height: 50px !important;
+    	transform: rotate(270deg);
+    	border: none;
+    	margin-top: -25px;
+	}
 
 /*  Section styling
 	* --------------------------------------- */
