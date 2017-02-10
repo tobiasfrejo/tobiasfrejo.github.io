@@ -15,6 +15,36 @@
     <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
 
     <script>
+    function switchActiveSlides(newSlideIndex) { //sectionIndex, slideIndex, nextSlideIndex
+        $('.slide.active').each(function(){
+            $(this).removeClass('active');
+        });
+
+        $('slide.sl-' + newSlideIndex).each(function(){
+            $(this).addClass('active');
+        });
+        
+        
+        //.find('.slide.active').attr('class');
+    }
+
+    function sectionChange(nextSectionIndex){
+        $('.section.active').each(function(){
+            $(this).find('.slide.active').each(function(){
+                var check = "sl-";
+                var classes = $(this).attr("class").split(/\s+/);
+                var slideIndex = 0;
+                $.each(classes, function (index, item) {
+                    if (item.indexOf(check) === 0) 
+                        slideIndex = parseInt(item.substr(check.length), 10);
+                });
+                console.log('sectionIndex: ' + nextSectionIndex);
+                console.log('slideIndex  : ' + slideIndex);
+                return slideIndex;
+            });
+        });
+    }
+
     $(document).ready(function() {
         $('#fullpage').fullpage({
             sectionsColor: ['#ffffff', '#4BBFC3', '#7BAABE', '#ccddff'],
@@ -22,7 +52,12 @@
 			scrollOverflow: true,
             navigation: true,
             slidesNavigation: true,
-            controlArrows: true
+            controlArrows: true,
+            onLeave: function(index, nextIndex, direction){
+                var leavingSlide = $(this);
+                newSlideIndex = sectionChange(nextIndex);
+                // $.fn.fullpage.moveTo(nextIndex, newSlideIndex); Doesn't work due to loop
+            }
         });
     });
     </script>
@@ -45,7 +80,7 @@
         </div>
 
         <div class="section" id="section1"> <!-- Moderne -->
-            <div class="slide" id="segMF">
+            <div class="slide sl-0" id="segMF">
                 <div class="inner-content">
                     <h1> Det moderne fællesskabsorienterede segment </h1>
                     <img alt="AltText" class="right" src="img.jpg" >
@@ -54,7 +89,7 @@
                     </p>
                 </div>
             </div>
-            <div class="slide active" id="segM">
+            <div class="slide sl-1 active" id="segM">
                 <div class="inner-content">
                     <h1> Det moderne segment </h1>
                     <img alt="AltText" class="right" src="img.jpg" >
@@ -63,7 +98,7 @@
                     </p>
                 </div>
             </div>
-            <div class="slide" id="segMI">
+            <div class="slide sl-2" id="segMI">
                 <div class="inner-content">
                     <h1> Det moderne individorienterede segment </h1>
                     <img alt="AltText" class="right" src="img.jpg" >
@@ -75,7 +110,7 @@
         </div>
 
         <div class="section" id="section2"> <!-- Center -->
-            <div class="slide" id="segF">
+            <div class="slide sl-0" id="segF">
                 <div class="inner-content">
                     <h1> Det fællesskabsorienterede segment </h1>
                     <img alt="AltText" class="right" src="img.jpg" >
@@ -84,7 +119,7 @@
                     </p>
                 </div>
             </div>
-            <div class="slide active" id="segC">
+            <div class="slide sl-1 active" id="segC">
                 <div class="inner-content">
                     <h1> Centersegmentet </h1>
                     <img alt="AltText" class="right" src="img.jpg" >
@@ -93,7 +128,7 @@
                     </p>
                 </div>
             </div>
-            <div class="slide" id="segI">
+            <div class="slide sl-2" id="segI">
                 <div class="inner-content">
                     <h1> Det individorienterede segment </h1>
                     <img alt="AltText" class="right" src="img.jpg" >
@@ -105,7 +140,7 @@
         </div>
 
         <div class="section" id="section3"> <!-- Traditionel -->
-            <div class="slide" id="segTF">
+            <div class="slide sl-0" id="segTF">
                 <div class="inner-content">
                     <h1> Det traditionelle fællesskabsorienterede segment </h1>
                     <img alt="AltText" class="right" src="img.jpg" >
@@ -114,7 +149,7 @@
                     </p> 
                 </div>
             </div>
-            <div class="slide active" id="segT">
+            <div class="slide sl-1 active" id="segT">
                 <div class="inner-content">
                     <h1> Det traditionelle segment </h1>
                     <img alt="AltText" class="right" src="img.jpg" >
@@ -123,7 +158,7 @@
                     </p> 
                 </div>
             </div>
-            <div class="slide" id="segTI">
+            <div class="slide sl-2" id="segTI">
                 <div class="inner-content">
                     <h1> Det traditionelle individorienterede segment </h1>
                     <img alt="AltText" class="right" src="img.jpg" >
