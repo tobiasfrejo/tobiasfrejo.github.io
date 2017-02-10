@@ -39,31 +39,31 @@
 	}
 
 	#segMF{
-		background: green
+		background: #cbe2b3
 	}
 	#segM{
-		background: green
+		background: #cbe2b3
 	}
 	#segMI{
-		background: blue
+		background: #b3cbe2
 	}
 	#segF{
-		background: red
+		background: #e2b3b3
 	}
 	#segC{
-		background: lightgray
+		background: #eaeaea
 	}
 	#segI{
-		background: blue
+		background: #b3cbe2
 	}
 	#segTF{
-		background: red
+		background: #e2b3b3
 	}
 	#segT{
-		background: purple
+		background: #d6b3e2
 	}
 	#segTI{
-		background: purple
+		background: #d6b3e2
 	}
 
 /*  Breakpoints
