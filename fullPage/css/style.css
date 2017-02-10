@@ -2,13 +2,13 @@
 	* --------------------------------------- */
     @import url('https://fonts.googleapis.com/css?family=Lora|Titillium+Web');
 
-    html {font-family: 'Titillium Web', sans-serif;}
+    html {font-family: 'Titillium Web', sans-serif;font-size:1.2em}
     h1, h2, h3, h4, h5, h6 {font-family: 'Lora', serif;}
 
 /* Clearfix and floats
 	* --------------------------------------- */
-	.right {float: right}
-	.left  {float: left}
+	.right {float:right;margin-left:1em}
+	.left  {float:left;margin-right:1em}
 	.clearfix {clear: both;}
 
 /*  Fix section navigation over slide arrow
@@ -19,20 +19,23 @@
 /*  Section styling
 	* --------------------------------------- */
     .inner-content {
-        max-width: 1280px;
+        max-width: 1024px;
         margin: 0 auto;
     }
 
 	img {
-		max-width: 100%
+		max-width: 100%;
+		border: solid 1px lightgray
+	}
+
+	p {
+		text-align: justify;
 	}
 
 /*  Section and slide colors
 	* --------------------------------------- */
 	#section0{
-		background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
-		background: -webkit-linear-gradient(#4BBFC3, #7BAABE);
-		background: linear-gradient(#4BBFC3,#7BAABE);
+		background: white
 	}
 
 	#segMF{
