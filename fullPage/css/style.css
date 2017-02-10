@@ -30,3 +30,9 @@
 	* --------------------------------------- */
     #fp-nav {right: 50px !important}
 
+/*  Section styling
+	* --------------------------------------- */
+    .section-inner {
+        max-width: 1280px;
+        margin: 0 auto;
+    }

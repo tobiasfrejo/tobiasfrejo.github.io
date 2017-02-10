@@ -3,6 +3,7 @@
 <head>
     <title></title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
@@ -16,8 +17,6 @@
     <script>
     $(document).ready(function() {
         $('#fullpage').fullpage({
-            scrollOverflow: true,
-
             sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
             anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
 			scrollOverflow: true,
@@ -35,7 +34,12 @@
     <div id="header">Header</div>
 
     <div id="fullpage">
-        <div class="section active" id="section0">Some section</div>
+        <div class="section active" id="section0">
+            <div class="section-inner">
+            <h1> Gallups Kompas </h1>
+
+            </div>
+        </div>
         <div class="section" id="section1">
             <div class="slide"> Slide 1 </div>
             <div class="slide active"> Slide 2 </div>
