@@ -5,7 +5,7 @@
     html {font-family: 'Titillium Web', sans-serif;}
     h1, h2, h3, h4, h5, h6 {font-family: 'Lora', serif;}
 
-/* Fixed header and footer.
+/* Header and footer.
 	* --------------------------------------- */
 	#header, #footer{
 		position:fixed;
@@ -25,3 +25,8 @@
 	#footer{
 		bottom:0px;
 	}
+
+/*  Fix section navigation over slide arrow
+	* --------------------------------------- */
+    #fp-nav {right: 50px !important}
+
