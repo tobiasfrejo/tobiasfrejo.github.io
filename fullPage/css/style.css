@@ -5,46 +5,79 @@
     html {font-family: 'Titillium Web', sans-serif;}
     h1, h2, h3, h4, h5, h6 {font-family: 'Lora', serif;}
 
-/* Header and footer.
+/* Clearfix and floats
 	* --------------------------------------- */
-	#header, #footer{
-		position:fixed;
-		height: 50px;
-		display:block;
-		width: 100%;
-		background: #333;
-		z-index:9;
-		text-align:center;
-		color: #f2f2f2;
-		padding: 20px 0 0 0;
-	}
-
-	#header{
-		top:0px;
-	}
-	#footer{
-		bottom:0px;
-	}
+	.right {float: right}
+	.left  {float: left}
+	.clearfix {clear: both;}
 
 /*  Fix section navigation over slide arrow
 	* --------------------------------------- */
     #fp-nav {right: 50px !important}
 
+
 /*  Section styling
 	* --------------------------------------- */
-    .section-inner {
+    .inner-content {
         max-width: 1280px;
         margin: 0 auto;
     }
 
+	img {
+		max-width: 100%
+	}
+
+/*  Section and slide colors
+	* --------------------------------------- */
+	#section0{
+		background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
+		background: -webkit-linear-gradient(#4BBFC3, #7BAABE);
+		background: linear-gradient(#4BBFC3,#7BAABE);
+	}
+
+	#segMF{
+		background: green
+	}
+	#segM{
+		background: green
+	}
+	#segMI{
+		background: blue
+	}
+	#segF{
+		background: red
+	}
+	#segC{
+		background: lightgray
+	}
+	#segI{
+		background: blue
+	}
+	#segTF{
+		background: red
+	}
+	#segT{
+		background: purple
+	}
+	#segTI{
+		background: purple
+	}
 
 /*  Breakpoints
 	* --------------------------------------- */
 
     @media only screen and (min-width: 680px) {
         /* For Smartphones (landscape) and tablets (portrait) */
+
+		img {
+			max-width: 70%
+		}
     }
 
     @media only screen and (min-width: 1024px) {
         /* For desktop */
+
+		img {
+			max-width: 50%
+		}
     }
