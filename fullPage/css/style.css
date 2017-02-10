@@ -36,3 +36,15 @@
         max-width: 1280px;
         margin: 0 auto;
     }
+
+
+/*  Breakpoints
+	* --------------------------------------- */
+
+    @media only screen and (min-width: 680px) {
+        /* For Smartphones (landscape) and tablets (portrait) */
+    }
+
+    @media only screen and (min-width: 1024px) {
+        /* For desktop */
+    }
