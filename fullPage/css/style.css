@@ -1,0 +1,27 @@
+/* Import and set fonts
+	* --------------------------------------- */
+    @import url('https://fonts.googleapis.com/css?family=Lora|Titillium+Web');
+
+    html {font-family: 'Titillium Web', sans-serif;}
+    h1, h2, h3, h4, h5, h6 {font-family: 'Lora', serif;}
+
+/* Fixed header and footer.
+	* --------------------------------------- */
+	#header, #footer{
+		position:fixed;
+		height: 50px;
+		display:block;
+		width: 100%;
+		background: #333;
+		z-index:9;
+		text-align:center;
+		color: #f2f2f2;
+		padding: 20px 0 0 0;
+	}
+
+	#header{
+		top:0px;
+	}
+	#footer{
+		bottom:0px;
+	}
