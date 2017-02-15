@@ -47,23 +47,49 @@
 
     $(document).ready(function() {
         $('#fullpage').fullpage({
-            sectionsColor: ['#ffffff', '#4BBFC3', '#7BAABE', '#ccddff'],
             anchors: ['Kompas', 'Moderne', 'Center', 'Traditionel'],
 			scrollOverflow: true,
-            navigation: true,
-            slidesNavigation: true,
-            controlArrows: true,
-            onLeave: function(index, nextIndex, direction){
-                var leavingSlide = $(this);
-                newSlideIndex = sectionChange(nextIndex);
-                // $.fn.fullpage.moveTo(nextIndex, newSlideIndex); Doesn't work due to loop
+            navigation: false,
+            slidesNavigation: false,
+            controlArrows: false,
+            verticalCentered: true,
+            paddingTop: '2em',
+            afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
+
             }
         });
     });
+
+    function toggleMenu() {
+        var x = document.getElementById("menu");
+        if (x.className === "menu") {
+            x.className += " responsive";
+        } else {
+            x.className = "menu";
+        }
+    }
+
     </script>
 
 </head>
 <body>
+    <div id="header">
+        <ul id="menu" class="menu">
+            <li> <a><b>Menu</b></a> </li>
+            <li> <a href="#Kompas" onclick="toggleMenu()">Gallups Kompas</a> </li>
+            <li> <a href="#Moderne/0" onclick="toggleMenu()">Det moderne fællesskabsorienterede segment</a> </li>
+            <li> <a href="#Moderne/1" onclick="toggleMenu()">Det moderne segment</a> </li>
+            <li> <a href="#Moderne/2" onclick="toggleMenu()">Det moderne individorienterede segment</a> </li>
+            <li> <a href="#Center/0" onclick="toggleMenu()">Det individorienterede segment</a> </li>
+            <li> <a href="#Center/2" onclick="toggleMenu()">Det traditionelle individorienterede segment</a> </li>
+            <li> <a href="#Traditionel/0" onclick="toggleMenu()">Det traditionelle segment</a> </li>
+            <li> <a href="#Traditionel/1" onclick="toggleMenu()">Det traditionelle fællesskabsorienterede segment</a> </li>
+            <li> <a href="#Traditionel/2" onclick="toggleMenu()">Det fællesskabsorienterede segment</a> </li>
+            <li class="icon">
+                <a href="javascript:void(0);" style="font-size:15px;" onclick="toggleMenu()">☰</a>
+            </li>
+        </ul>
+    </div>
 
     <div id="fullpage">
         <div class="section active" id="section0">

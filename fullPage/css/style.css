@@ -1,11 +1,11 @@
-/* Import and set fonts
+/*  Import and set fonts
 	* --------------------------------------- */
     @import url('https://fonts.googleapis.com/css?family=Lora|Titillium+Web');
 
     html {font-family: 'Titillium Web', sans-serif;font-size:1.2em}
     h1, h2, h3, h4, h5, h6 {font-family: 'Lora', serif;}
 
-/* Clearfix and floats
+/*  Clearfix and floats
 	* --------------------------------------- */
 	.right {float:right;margin-left:1em}
 	.left  {float:left;margin-right:1em}
@@ -42,7 +42,62 @@
     	border: none;
     	margin-top: -25px;
 	}
+/*  Header / menu
+	* --------------------------------------- */
+	#header {
+		width: 100%;
+  		margin: 0;
+  		padding: 0;
+  		overflow: hidden;
+  		background-color: #333;
+		position: fixed;
+		z-index: 9;
+	}
 
+	ul.menu {
+  		list-style-type: none;
+  		margin: 0 auto;
+  		padding: 0;
+		max-width: 1024px;
+		position: relative;
+	}
+
+	ul.menu li:not(:first-child) {display: none;}
+
+	ul.menu li {float: left;}
+	ul.menu.responsive li {
+		float: none;
+		display: inline;
+	}
+
+	ul.menu li a {
+		display: inline-block;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		transition: 0.3s;
+		font-size: 17px;
+	}
+	ul.menu.responsive li a {
+		display: block;
+		text-align: left;
+	}
+
+	ul.menu li:not(:first-child) a:hover {background-color: #555;}
+	
+	ul.menu li.icon {
+		float: right;
+		display: inline-block;
+	}
+	
+	ul.menu.responsive li.icon {
+		position: absolute;
+		z-index: 9;
+		right: 0;
+		top: 0;
+	}
+	
 /*  Section styling
 	* --------------------------------------- */
     .inner-content {
