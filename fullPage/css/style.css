@@ -7,9 +7,11 @@
 
 /*  Clearfix and floats
 	* --------------------------------------- */
-	.right {float:right;margin-left:1em}
-	.left  {float:left;margin-right:1em}
+	.right {float:right}
+	.left  {float:left}
 	.clearfix {clear: both;}
+
+	.right > p {margin:0}
 
 /*  Fix section navigation over slide arrow
 	* --------------------------------------- */
@@ -105,14 +107,15 @@
         margin: 0 auto;
     }
 
-	img {
+	.img {
 		max-width: 100%;
 		border: solid 1px lightgray
 	}
+	img{max-width: 100%}
+	.imgdesc{font-size:.8em}
 
-	p {
-		text-align: justify;
-	}
+
+	p {text-align: justify}
 
 /*  Section and slide colors
 	* --------------------------------------- */
@@ -154,15 +157,18 @@
     @media only screen and (min-width: 680px) {
         /* For Smartphones (landscape) and tablets (portrait) */
 
-		img {
-			max-width: 70%
+		.right {margin-left:1em}
+		.left  {margin-right:1em}
+
+		.img {
+			max-width: 66.666%
 		}
     }
 
     @media only screen and (min-width: 1024px) {
         /* For desktop */
 
-		img {
+		.img {
 			max-width: 50%
 		}
     }
