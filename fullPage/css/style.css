@@ -114,8 +114,8 @@
 	img{max-width: 100%}
 	.imgdesc{font-size:.8em}
 
-
 	p {text-align: justify}
+	a, a:visited {color:blue}
 
 /*  Section and slide colors
 	* --------------------------------------- */
