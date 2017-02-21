@@ -15,36 +15,6 @@
     <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
 
     <script>
-    function switchActiveSlides(newSlideIndex) { //sectionIndex, slideIndex, nextSlideIndex
-        $('.slide.active').each(function(){
-            $(this).removeClass('active');
-        });
-
-        $('slide.sl-' + newSlideIndex).each(function(){
-            $(this).addClass('active');
-        });
-        
-        
-        //.find('.slide.active').attr('class');
-    }
-
-    function sectionChange(nextSectionIndex){
-        $('.section.active').each(function(){
-            $(this).find('.slide.active').each(function(){
-                var check = "sl-";
-                var classes = $(this).attr("class").split(/\s+/);
-                var slideIndex = 0;
-                $.each(classes, function (index, item) {
-                    if (item.indexOf(check) === 0) 
-                        slideIndex = parseInt(item.substr(check.length), 10);
-                });
-                console.log('sectionIndex: ' + nextSectionIndex);
-                console.log('slideIndex  : ' + slideIndex);
-                return slideIndex;
-            });
-        });
-    }
-
     $(document).ready(function() {
         $('#fullpage').fullpage({
             anchors: ['Kompas', 'Moderne', 'Center', 'Traditionel'],
