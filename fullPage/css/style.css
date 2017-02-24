@@ -184,17 +184,10 @@
 			max-width: 50%
 		}
 
-		ul.menu.responsive li:not(:nth-child(-n+2)) a {
+		ul.menu.responsive li:not(:nth-child(-n+2)):not(.icon) a {
 			width: calc(33% - 32px);
 			height: 3em;
 			float: left;
-		}
-
-		ul.menu.responsive
-
-		ul.menu.responsive li.icon a {
-			height: 100%;
-			width: .9em;
 		}
 		
 		ul.menu.responsive li.centeritem {
