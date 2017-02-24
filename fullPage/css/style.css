@@ -83,6 +83,9 @@
 	}
 	ul.menu.responsive li a {
 		display: block;
+		text-align: center;
+	}
+	ul.menu.responsive li:first-child a {
 		text-align: left;
 	}
 
@@ -100,6 +103,14 @@
 		top: 0;
 	}
 	
+	ul.menu li.centeritem {
+		display: none;
+	}
+	ul.menu li.centeritem a:hover, ul.menu li.centeritem a {
+		background-color:transparent;
+		color: #000;
+	}
+
 /*  Section styling
 	* --------------------------------------- */
     .inner-content {
@@ -172,4 +183,22 @@
 		.img {
 			max-width: 50%
 		}
+
+		ul.menu.responsive li:not(:nth-child(-n+2)) a {
+			width: calc(33% - 32px);
+			height: 3em;
+			float: left;
+		}
+
+		ul.menu.responsive
+
+		ul.menu.responsive li.icon a {
+			height: 100%;
+			width: .9em;
+		}
+		
+		ul.menu.responsive li.centeritem {
+			display: block;
+		}
+
     }
