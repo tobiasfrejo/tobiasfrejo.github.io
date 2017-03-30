@@ -1,5 +1,6 @@
 # Links
-  [Kom/IT test](./fullPage)
+  [Kom/IT | Gallups Kompas](./fullPage)
+  [Kom/IT | Kampagneopgave (Layout)](./kampagneopgave/)
   
   
 # Lorem Ipsum
