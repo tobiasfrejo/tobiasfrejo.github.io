@@ -1,3 +1,3 @@
 # tobiasfrejo.github.io
 
-[Link](tobias.frejo.dk)
+[Link](//tobias.frejo.dk)
