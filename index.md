@@ -1,7 +1,8 @@
 # Links
-  [Kom/IT | Layout på kampagneopgave ](http://tobias.frejo.dk/kampagneopgave/)
+## Kom/IT 
+  Layout på kampagneopgave: [Link](http://tobias.frejo.dk/kampagneopgave/)
   
-  [Kom/IT | Gallups Kompas](./fullPage)
+  Gallups kompas: [Link](./fullPage)
   
 
 # Lorem Ipsum
